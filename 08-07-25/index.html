@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yeni Sezon Ürünleri</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Yeni Sezon Ürünleri</h1>
+<h2 id="greeting" style="text-align:center; margin-bottom: 20px;"></h2>
+<button onclick="resetUserData()" style="
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+">
+  🔄 Kullanıcı Bilgilerini Sıfırla
+</button>
+
+
+
+  <div class="product-grid">
+
+    <!--1-->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://l24.im/eg2Jtc" alt="Whey Protein" />
+      </div>
+      <div class="product-info">
+        <h3>Whey Protein 2kg</h3>
+        <p>799.99 TL</p>
+        <button>Sepete Ekle</button>
+      </div>
+    </div>
+
+    <!--2-->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://l24.im/EkiG" alt="Isolate Protein" />
+      </div>
+      <div class="product-info">
+        <h3>Isolate Protein 1.8kg</h3>
+        <p>999.99 TL</p>
+        <button>Sepete Ekle</button>
+      </div>
+    </div>
+
+    <!--3-->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://l24.im/RiDLO" alt="Soya Protein" />
+      </div>
+      <div class="product-info">
+        <h3>Soya Proteini</h3>
+        <p>699.99 TL</p>
+        <button>Sepete Ekle</button>
+      </div>
+    </div>
+
+    <!--4-->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://l24.im/MsC4" alt="Vegan Protein" />
+        <span class="badge">Tükendi</span>
+      </div>
+      <div class="product-info">
+        <h3>Vegan Protein 1.2kg</h3>
+        <p>849.99 TL</p>
+        <button>Sepete Ekle</button>
+      </div>
+    </div>
+
+    <!--5-->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://l24.im/EMSfl" alt="Protein Bar" />
+      </div>
+      <div class="product-info">
+        <h3>Protein Bar 12'li</h3>
+        <p>299.99 TL</p>
+        <button>Sepete Ekle</button>
+      </div>
+    </div>
+
+    <!--6-->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://l24.im/Joy9Vuf" alt="Kreatin" />
+      </div>
+      <div class="product-info">
+        <h3>Kreatin 500g</h3>
+        <p>249.99 TL</p>
+        <button>Sepete Ekle</button>
+      </div>
+    </div>
+
+  </div>
+  <div id="cart-display" style="
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+">
+
+  <h2 style="text-align: center; margin-bottom: 20px;">🛒 Sepetiniz</h2>
+
+  <div id="cart-items" style="
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 4px;
+  ">
+    Henüz ürün eklenmedi.
+  </div>
+
+  <hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;" />
+
+  <p id="cart-total" style="font-weight: bold; font-size: 18px; text-align: right;">
+    Toplam: 0.00₺
+  </p>
+
+  <button onclick="clearCart()" style="
+    width: 100%;
+    background-color: #dc3545;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  ">
+    🗑️ Sepeti Temizle
+  </button>
+
+</div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
