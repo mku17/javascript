@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div style="display: flex; justify-content: flex-end;">
+      <button id="languageToggle">Türkçe</button>
+    </div>
+
+    <h1 data-i18n="title">Task Manager</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskTitle" data-i18n-placeholder="taskTitle" placeholder="Task Title *" required />
+      <textarea id="taskDescription" data-i18n-placeholder="taskDescription" placeholder="Description (Optional)"></textarea>
+
+      <div class="priority-group">
+        <input type="radio" id="low" name="priority" value="Low" />
+        <label for="low" data-i18n="low">Low</label>
+
+        <input type="radio" id="medium" name="priority" value="Medium" />
+        <label for="medium" data-i18n="medium">Medium</label>
+
+        <input type="radio" id="high" name="priority" value="High" />
+        <label for="high" data-i18n="high">High</label>
+      </div>
+
+      <button type="submit" data-i18n="add">Add</button>
+      <p id="errorMessage" class="error-message"></p>
+    </form>
+
+    <div class="filters">
+      <button id="showCompleted" data-i18n="showCompleted">Show Only Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
