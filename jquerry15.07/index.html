@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Takip Sistemi</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Öğrenci Takip Sistemi</h1>
+        
+        <div class="form-container">
+            <h2>Yeni Öğrenci Ekle</h2>
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="name">Öğrenci Adı:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="class">Sınıf:</label>
+                    <input type="text" id="class" required>
+                </div>
+                <button type="submit">Ekle</button>
+            </form>
+        </div>
+        
+        <div class="table-container">
+            <h2>Öğrenci Listesi</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Öğrenci Adı</th>
+                        <th>Sınıf</th>
+                        <th>İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
