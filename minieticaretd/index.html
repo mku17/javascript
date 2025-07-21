@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini E-Ticaret Uygulaması</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ürün Kataloğu</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Ürün ara..." />
+        <button id="searchBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div id="productList" class="product-list"></div>
+
+    <div class="cart-container">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="cart">
+          <span class="tab-icon">🛒</span>
+          <span class="tab-text">Sepet</span>
+          <span class="badge">0</span>
+        </button>
+        <button class="tab-btn" data-tab="favorites">
+          <span class="tab-icon">❤️</span>
+          <span class="tab-text">Favoriler</span>
+        </button>
+      </div>
+      
+      <div id="cart" class="tab-content active"></div>
+      <div id="favorites" class="tab-content"></div>
+      
+      <div class="action-buttons">
+        <button id="clearCart" class="secondary-btn">Sepeti Temizle</button>
+        <button id="clearFavorites" class="secondary-btn">Favorileri Temizle</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
